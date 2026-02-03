@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SavvyCat Solutions, LLC</title>
 
-    <!-- Favicon -->
+    <!-- Favicon (.ico file) -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <!-- Bootstrap CSS -->
@@ -23,13 +23,20 @@
             max-width: 700px;
             margin-top: 10vh;
         }
+        .header-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
         .logo {
-            max-width: 180px;
-            margin-bottom: 1.5rem;
+            max-width: 80px;
+            height: auto;
         }
         h1 {
             font-weight: 600;
-            margin-bottom: 1rem;
+            margin: 0;
         }
         .card {
             border-radius: 14px;
@@ -47,15 +54,19 @@
 <body>
     <div class="container text-center">
         <div class="card shadow-sm">
-            
-            <!-- Logo placeholder -->
-            <img src="squarelogowithtextwhite.png" alt="SavvyCat Solutions Logo" class="logo">
 
-            <h1>SavvyCat Solutions, LLC</h1>
+            <!-- Logo + Title on same line -->
+            <div class="header-row mb-4">
+                <img src="logo.png" alt="SavvyCat Solutions Logo" class="logo">
+                <h1>SavvyCat Solutions, LLC</h1>
+            </div>
 
             <p class="lead mt-3">
                 For more information or to see what we can do for you, 
-                email me at <a href="mailto:casey@savvycatsolutions.com">casey@savvycatsolutions.com</a>.
+                email me at 
+                <a href="mailto:casey@savvycatsolutions.com">
+                    casey@savvycatsolutions.com
+                </a>.
             </p>
         </div>
     </div>
